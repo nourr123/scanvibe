@@ -1,0 +1,4 @@
+Dataset: Amazon Reviews
+Source: Kaggle
+Size: 250MB (not included in repo)
+Purpose: sentiment analysis / classification
