@@ -1,0 +1,38 @@
+name: scanvibe
+description: "Application mobile d'analyse intelligente d'avis produits"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_svg: ^2.0.7
+  google_fonts: ^4.0.4
+  mobile_scanner: ^7.0.1
+  image_picker: ^1.0.7           # (au lieu de 0.8.x)
+  http: ^1.1.0
+  shared_preferences: ^2.2.2
+  flutter_tesseract_ocr: ^0.4.29
+
+  # 🔽 requis par ton code d’OCR avec pré-traitement
+  image: ^4.1.7
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/scanvibe_logo.svg
+    #- assets/google_icon.svg
+    #- assets/facebook_icon.svg
+    # 🔽 modèles Tesseract – place bien les fichiers ici
+    - assets/tessdata/eng.traineddata
+    - assets/tessdata/fra.traineddata
